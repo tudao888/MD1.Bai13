@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Bài 1: Viết một chương trình Javascript để nối tất cả các phần tử trong một mảng chuỗi lại với nhau. Ví dụ có mảng chuỗi như sau: myColor = ["Red", "Green", "White", "Black"];
+    // Sau khi thực thi chương trình sẽ trả về dạng như sau :
+    //     "Red,Green,White,Black"
+    // const color1 = ["Red", "Green"]
+    // const color2 = ["White", "Black"]
+    // let newcolor = color1.concat(color2)
+    // console.log(newcolor)
+
+
+// Bài 2: Viết một chương trình nhận một số nhập vào và chèn dấu (-)
+//     giữa 2 số chẵn. Ví dụ nếu bạn nhập vào 025468 thì kết quả của
+//     chương trình sẽ là 0-254-6-8.
+//
+// const nums = prompt();
+// let str = nums.toString();
+// const result = [str[0]];
+// for (let i = 1; i < str.length; i++) {
+//     if ((str[i-1]%2===0)&&(str[i]%2===0)) {
+//         result.push("-",str[i]);
+//     } else {
+//         result.push(str[i]);
+//     }
+// }
+//     console.log(result.join(''))
+
+
+<!--Bài 3: Viết một chương trình nhập vào một chuỗi và chuyển các ký tự chữ thường-->
+<!--    trong chuỗi vừa nhập sang thành dạng chữ hoa. Ví dụ: nếu bạn nhập vào chuỗi -->
+<!--    'The Quick Brown Fox' kết quả của chương trình là 'tHE qUICK bROWN fOX'. -->
+let chuoi1 = prompt().split('')
+for (let i = 0; i < chuoi1.length; i++) {
+   if(chuoi1[i] === chuoi1[i].toUpperCase()){
+       chuoi1[i] = chuoi1[i].toLowerCase()
+   }
+   else if(chuoi1[i] === chuoi1[i].toLowerCase()){
+       chuoi1[i] = chuoi1[i].toUpperCase()
+   }
+}
+    console.log(chuoi1.join(''))
+
+
+
+</script>
+</body>
+</html>
