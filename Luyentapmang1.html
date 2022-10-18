@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+// Bài 1- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử.
+// Chương trình thực hiện tính và hiển thị xem có bao nhiêu
+// số nguyên lớn hơn hoặc bằng 10.
+//   let nums = [1,3,7,10,15,-22,78,99,60,4]
+//   for (let i of nums) {
+//     if (i >= 10) {
+//         document.write(i + "<br>");
+//     }
+//   }
+
+//
+// Bài 2- Viết chương trình khởi tạo mảng số nguyên gồm 10 phần tử khác nhau.
+//     Chương trình hiển thị ra được phần tử có giá trị lớn nhất trong mảng
+// và vị trí của phần tử đó.
+// let nums = [1,3,7,10,15,-22,78,99,60,4]
+// let max = nums[0];
+// for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] > max) {
+//         max = nums[i];
+//     }
+// } document.write("gia tri lon nhat la:" + max + "co vi tri la:" + nums.indexOf(max));
+
+// Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất
+// trong mảng đó. In ra giá trị trung bình của các phần tử trong mảng.
+// let nums = [1,3,7,10,15,22,78,99,60,4]
+// let max = nums[0];
+// let total = 0;
+// let TB = 0;
+// for (let i = 0; i < nums.length; i++) {
+//     if (nums[i] > max) {
+//         max = nums[i];
+//     }
+// }
+// for (let i = 0; i < nums.length; i++) {
+//     total += nums[i];
+//     TB = total / nums.length
+//     }
+// document.write("so lon nhat la:" + max + "<br>" + "trung binh day la" + TB)
+
+// Bài 4- Viết chương trình khởi tạo/nhập vào một mảng số nguyên và
+// đảo ngược các phần tử trong mảng đó.
+// let nums = [1,3,7,10,15,22,78,99,60,4]
+// nums.reverse()
+// document.write(nums)
+
+// Bài 5- Viết chương trình đếm số nguyên âm trong một chuỗi
+// let nums = [1,-3,7,-10,15,-22,-78,-99,60,-4];
+// let a = 0;
+// for (let i = 0; i<nums.length; i++) {
+//     if (nums[i] <0) {
+//        a = a + 1;
+//     }
+// } document.write(a);
+
+
+// Bài 6- Viết chương trình khởi tạo/nhập vào một mảng số nguyên
+// gồm 10 phần tử, nhập/tạo phần tử số nguyên V. Chương trình tìm xem V
+// có nằm trong mảng số nguyên không? Nếu V thuộc mảng số nguyên thì in
+// ra "V is in the array" còn lại in ra "V is not in the array".
+
+// const nums = [1,-3,7,-10,15,-22,-78,-99,60,-4];
+// const V = +prompt("Nhập vào một số");
+//     if (nums.indexOf(V) != -1) {
+//         alert(V + "is in the array");
+//     }
+//     else {
+//         alert(V + "is not in the array");
+//     }
+// // }
+
+
+// Bài 7- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phầntử
+// , nhập/tạo phần tử số nguyên V. Chương trình kiểm tra xem V có thuộc
+// mảng đã cho không, nếu V thuộc mảng đã cho xoá V khỏi mảng (Bản chất
+// việc xoá ở đây tức là dịch phần tử ở bên phải V sang vị trí của V,
+//  và gán 0 cho phần tử cuối cùng của mảng)
+//
+// let nums = [1,-3,7,-10,15,-22,-78,-99,60,-4];
+// let V = +prompt("Nhập vào số V");
+// if (nums.indexOf(V) !== -1) {
+//     nums.splice(nums.indexOf(V),1)
+//     document.write(nums)
+// } else {
+//     alert(V + "khong nam trong mang")
+// }
+
+// Bài 8- Viết chương trình khởi tạo/nhập vào một mảng số nguyên gồm 10 phần tử.
+//Chương trình sắp xếp mảng theo thứ tự giảm dần và hiển thị ra mảng đã được sắp xếp.
+// let nums = [1,-3,7,-10,15,-22,-78,-99,60,-4];
+// nums.sort((a,b) => a -b);
+// document.write(nums)
+// // cách 2: nums.sort(function compareNumber(a,b) {
+// // return a-b
+// // }
+// // )
+</script>
+</body>
+</html>

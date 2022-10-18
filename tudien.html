@@ -5,26 +5,27 @@
     <title>Title</title>
 </head>
 <body>
-<label>Nhập từ:</label>
-<input type="text" id="dauvao">
-<input type="button" value="Dịch" onclick="luulai()">
+<!--<label>Nhập từ:</label>-->
+<!--<input type="text" id="dauvao">-->
+<!--<input type="button" value="Dịch" onclick="luulai()">-->
 <script>
 
-    function luulai() {
-        let check = false
-        let qua1 = ['táo', 'chuối', 'dưa hấu', 'chanh'];
-        let qua2 = ['apple', 'banana', 'watermelon', 'lemon'];
-       let input = document.getElementById("dauvao").value;
-        for (let i = 0; i < qua1.length; i++) {
-            if (input === qua1[i]) {
-                document.write(qua2[i]);
-                check = true;
-            }
-        }
-        if(!check){
-            document.write('Khong tim thay')
-        }
-    }
+    // function luulai() {
+    //     let check = false
+    //     let qua1 = ['táo', 'chuối', 'dưa hấu', 'chanh'];
+    //     let qua2 = ['apple', 'banana', 'watermelon', 'lemon'];
+    //    let input = document.getElementById("dauvao").value;
+    //     for (let i = 0; i < qua1.length; i++) {
+    //         if (input === qua1[i]) {
+    //             document.write(qua2[i]);
+    //             check = true;
+    //         }
+    //     }
+    //     if(!check){
+    //         document.write('Khong tim thay')
+    //     }
+    // }
+
 
 </script>
 </body>
