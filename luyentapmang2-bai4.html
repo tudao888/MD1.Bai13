@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id="1">
+<input type="button" value="ADD" onclick="add()">
+<body>
+<script>
+  let count = 0;
+  let chuoi = 0
+  function add() {
+    let input = document.getElementById("1").value.split('');
+    console.log(input)
+    for (let i of input) {
+      if (Number(i)) {
+        count++;
+        chuoi = input.length - count;
+
+      }
+    } alert(chuoi)
+  }
+</script>
+</body>
+</html>

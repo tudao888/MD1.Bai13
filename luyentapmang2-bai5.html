@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<input type="text" id ="1">
+<input type="text" id ="2">
+<input type="button" value="Check" onclick="add()">
+
+<body>
+<script>
+  function add() {
+    let input1 = 0;
+    let input2 = 0;
+    let check = true;
+    input1 = document.getElementById("1").value.split('');
+    input2 = document.getElementById("2").value.split('');
+    for (let i =0; i<input1.length;i++) {
+      if (input1[i]===input2[i]) {
+        check = true;
+      } else {
+        check = false;
+        alert("2 chuoi khac nhau");
+        break;
+      }
+    }
+    if (check) {alert("2 chuoi giong nhau")}
+  }
+
+</script>
+</body>
+</html>

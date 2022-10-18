@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">
+<input type="button" value="ADD" onclick="add()">
+<script>
+// Bài 3: Viết một chương trình khai báo một mảng ký tự và kích thước
+// của mảng.Chương trình này đếm số ký tự số trong mảng.
+let array = [];
+let count = 0;
+function add () {
+    array = document.getElementById('1').value.split('')
+    console.log(array)
+    for (let i of array ) {
+        if (isNaN(i) === false) {
+            count+=1;
+        }
+} alert(count);
+}
+// let arr = []
+// let count = 0
+// function add(){
+//
+// let input = document.getElementById('1').value.split('')
+//     for (let i = 0; i < input.length; i++) {
+//         if(Number(input[i])){
+//             count ++
+//         }
+//     }
+//     console.log(count)
+// }
+// for(let i of input){
+// if(Number(i)){
+//     count++
+// }
+// }
+//     console.log(count)
+// }
+
+</script>
+</body>
+</html>

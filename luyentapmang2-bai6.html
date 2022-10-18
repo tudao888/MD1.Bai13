@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="1">
+<input type="button" value="Convert" onclick="chuyen()">
+<script>
+// Bài 6: Viết chương trình nhập vào một mảng ký tự, tìm tất cả các ký tự
+// trong mảng là (-) và thay thế các ký tự này bởi ký tự ( _ )
+function chuyen() {
+  let a = "-";
+  let b = "_";
+  let input = document.getElementById("1").value.split('');
+  for (let i=0; i<input.length;i++) {
+    if(input[i] === a) {
+      input[i] = b;
+    }
+  } document.write(input.join(''))
+}
+
+</script>
+</body>
+</html>
